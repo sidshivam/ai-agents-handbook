@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Agents & Agentic Software Development — A Practical Engineering Handbook by Siddhartha Shivam.">
+  <title>AI Agents & Agentic Software Development</title>
+
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --text: #162033;
+      --muted: #5f6b7a;
+      --accent: #2563eb;
+      --accent-dark: #1d4ed8;
+      --border: #dfe5ec;
+      --soft: #eef4ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 70px 0 50px;
+      background:
+        radial-gradient(circle at top right, rgba(37, 99, 235, 0.10), transparent 35%),
+        linear-gradient(180deg, #ffffff 0%, #f6f8fb 100%);
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 850px;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      margin-top: 22px;
+      max-width: 800px;
+      font-size: clamp(19px, 2.3vw, 25px);
+      color: var(--muted);
+    }
+
+    .author {
+      margin-top: 28px;
+      font-weight: 600;
+    }
+
+    .actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.15s ease;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .button.primary:hover {
+      background: var(--accent-dark);
+    }
+
+    .button.secondary {
+      color: var(--text);
+      background: #fff;
+      border: 1px solid var(--border);
+    }
+
+    .button.secondary:hover {
+      border-color: #b8c3d0;
+      background: #fafbfc;
+    }
+
+    main {
+      padding: 45px 0 80px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    .cover {
+      background: #111827;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(16, 24, 40, 0.14);
+    }
+
+    .cover img {
+      width: 100%;
+      display: block;
+    }
+
+    .intro h2,
+    .section h2 {
+      font-size: 27px;
+      margin: 0 0 16px;
+      letter-spacing: -0.025em;
+    }
+
+    .intro p {
+      color: var(--muted);
+      font-size: 17px;
+      margin: 0 0 18px;
+    }
+
+    .topics {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .topic {
+      padding: 14px 16px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      font-weight: 600;
+    }
+
+    .section {
+      margin-top: 70px;
+    }
+
+    .note {
+      margin-top: 22px;
+      padding: 20px 22px;
+      background: var(--soft);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      color: #334155;
+    }
+
+    footer {
+      padding: 30px 0 45px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+      background: #fff;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        padding-top: 45px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .cover {
+        max-width: 340px;
+      }
+
+      .topics {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="eyebrow">Practical Engineering Handbook</div>
+
+      <h1>AI Agents &amp;<br>Agentic Software Development</h1>
+
+      <div class="subtitle">
+        A practical guide to AI agents, VS Code, GitHub Copilot, Claude, Codex, MCP,
+        custom agents, agent skills and multi-agent engineering workflows.
+      </div>
+
+      <div class="author">
+        By Siddhartha Shivam
+      </div>
+
+      <div class="actions">
+        <a
+          class="button primary"
+          href="AI_Agents_Agentic_Software_Development_Handbook.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          Read the Handbook
+        </a>
+
+        <a
+          class="button secondary"
+          href="AI_Agents_Agentic_Software_Development_Handbook.pdf"
+          download
+        >
+          Download PDF
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <div class="hero-grid">
+
+        <div class="cover">
+          <img
+            src="cover.png"
+            alt="Cover of AI Agents & Agentic Software Development handbook"
+          >
+        </div>
+
+        <div class="intro">
+          <h2>About the handbook</h2>
+
+          <p>
+            This is a working manual for software and data engineers who want to move
+            from AI autocomplete to genuine agentic engineering.
+          </p>
+
+          <p>
+            It focuses on what changes when AI can investigate problems, use tools,
+            modify files, run tests, interpret results and decide what to do next.
+          </p>
+
+          <div class="topics">
+            <div class="topic">AI Agents</div>
+            <div class="topic">VS Code Agents</div>
+            <div class="topic">GitHub Copilot</div>
+            <div class="topic">Claude &amp; Codex</div>
+            <div class="topic">Model Context Protocol</div>
+            <div class="topic">Custom Agents &amp; Skills</div>
+            <div class="topic">Multi-Agent Systems</div>
+            <div class="topic">Permissions &amp; Safety</div>
+            <div class="topic">Agent Evaluation</div>
+            <div class="topic">Engineering Workflows</div>
+          </div>
+        </div>
+
+      </div>
+
+      <section class="section">
+        <h2>What you'll find inside</h2>
+
+        <p>
+          The handbook combines concepts, practical workflows, prompts, examples,
+          SQL and code, with a strong emphasis on evidence, review discipline,
+          permissions and safe agent operation.
+        </p>
+
+        <div class="note">
+          <strong>Examples and data:</strong>
+          All data, table names, identifiers and code in the handbook are synthetic
+          and created for teaching purposes. Nothing reproduces production data or
+          proprietary logic.
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      AI Agents &amp; Agentic Software Development · Practical Engineering Edition
+    </div>
+  </footer>
+
+</body>
+</html>
